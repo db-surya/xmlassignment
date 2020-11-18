@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?> 
+<?xml-stylesheet type="text/xsl" href="Transaction.xsl" ?> 
+<Transaction>
+<Detail id="1">
+<workername>Surya D B</workername>
+<customername>Virat Kohli</customername>
+<work>Electrical works</work>
+<date>05/11/2000</date>
+<bill>Rs 5000/-</bill>
+</Detail>
+<Detail id="2">
+<workername>R Raaghul</workername>
+<customername>Kumar</customername>
+<work>Plumbing</work>
+<date>07/11/2000</date>
+<bill>Rs 2000/-</bill>
+</Detail>
+<Detail id="3">
+<workername>Rajesh</workername>
+<customername>Tharun</customername>
+<work>Carpentry</work>
+<date>10/11/2000</date>
+<bill>Rs 10000/-</bill>
+</Detail>
+</Transaction>

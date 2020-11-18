@@ -1,0 +1,28 @@
+{
+   "Transactiondetails":[
+      {
+         "@id": "1",
+         "workername": "Surya D B",
+         "customername": "Virat Kohli",
+         "work": "Electrical works",
+         "date": "05/11/2000",
+         "bill": "Rs 5000/-"
+      },
+      {
+         "@id": "2",
+         "workername": "R Raaghul",
+         "customername": "Kumar",
+         "work": "Plumbing",
+         "date": "07/11/2000",
+         "bill": "Rs 2000/-"
+      },
+      {
+         "@id": "3",
+         "workername": "Rajesh",
+         "customername": "Tharun",
+         "work": "Carpentry",
+         "date": "10/11/2000",
+         "bill": "Rs 10000/-"
+      }
+   ]
+}

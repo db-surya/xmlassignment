@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?> 
+<?xml-stylesheet type="text/xsl" href="worker.xsl" ?> 
+<Details>
+<Workerdetails>
+   <worker id="1">
+    <name>Surya D B</name>
+    <profession>Electrician</profession>
+    <phone>8110993185</phone>
+   </worker>
+    <worker id="2">
+    <name>Raaghul R</name>
+    <profession>Plumber</profession>
+    <phone>9940341232</phone>
+    </worker>
+    <worker id="3">
+    <name>Harry</name>
+    <profession>Carpenter</profession>
+    <phone>6370993122</phone>
+   </worker>
+</Workerdetails>
+<customerdetails>
+    <customer id="1" gender="M">
+    <name>Ramesh</name>
+    <city>Mettur</city>
+    <bill>Rs 1000/-</bill>
+    </customer>
+    <customer id="2" gender="F">
+    <name>Zara Lone</name>
+    <city>Delhi</city>
+    <bill>Rs 2200/-</bill>
+    </customer>
+</customerdetails>
+</Details>
+

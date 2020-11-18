@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  </head>
+<body>
+  <ul class="nav nav-tabs">
+    <li class="nav-item">
+      <a class="nav-link active" href="index.html">Helper Find</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="Transaction.html">Transction DOM</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="json.html">Worker JSON</a>
+    </li>
+    <li class="nav-item">
+        <a class="nav-link" href="transactjson.html">Transaction JSON</a>
+      </li>
+    <li class="nav-item">
+      <a class="nav-link disabled" href="" tabindex="-1" aria-disabled="true">Login</a>
+    </li>
+  </ul>
+  <div class="jumbotron jumbotron-fluid"  style="background-image: url(https://images.unsplash.com/photo-1588421357574-87938a86fa28?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1500&q=80); background-size: 100%;>
+    <div class="container">
+      <h1 class="display-4" style="padding-left: 40px; color:white;">Workers JSON page</h1>
+      <p class="lead" style="padding-left: 40px;">The infomartion below is parsed from json file</p>
+    </div>
+  </div>
+<div class="container">
+  <h1>Worker details</h1>
+  <ol id="category"></ol>
+  <h2>Customer details</h2>
+  <ol id="customer"></ol>
+</div>
+
+<script>
+var x="";
+var y="";
+var xmlhttp = new XMLHttpRequest();
+xmlhttp.onreadystatechange = function() {
+  if (this.readyState == 4 && this.status == 200) {
+    var myobj = JSON.parse(this.responseText);
+    for( i in myobj.Workerdetails)
+    {
+        x +="<li>"+myobj.Workerdetails[i].name+"-"+myobj.Workerdetails[i].profession+"  "+myobj.Workerdetails[i].phone+"</li>";
+    }
+    for( i in myobj.customerdetails)
+    {
+      y +="<li>"+myobj.customerdetails[i].name+" from "+myobj.customerdetails[i].city+" Bill: "+myobj.customerdetails[i].bill+"</li>"
+    }
+    document.getElementById("category").innerHTML=x;
+    document.getElementById("customer").innerHTML=y;
+
+  } 
+};
+xmlhttp.open("GET", "worker.txt", true);
+xmlhttp.send();
+</script>
+
+
+</body>
+</html>

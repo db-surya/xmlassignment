@@ -1,0 +1,38 @@
+{
+   "Workerdetails": [
+      {
+         "@id": "1",
+         "name": "Surya D B",
+         "profession": "Electrician",
+         "phone": "8110993185"
+      },
+      {
+         "@id": "2",
+         "name": "Raaghul R",
+         "profession": "Plumber",
+         "phone": "9940341232"
+      },
+      {
+         "@id": "3",
+         "name": "Harry",
+         "profession": "Carpenter",
+         "phone": "6370993122"
+      }
+   ],
+   "customerdetails": [
+      {
+         "@id": "1",
+         "@gender": "M",
+         "name": "Ramesh",
+         "city": "Mettur",
+         "bill": "Rs 1000/-"
+      },
+      {
+         "@id": "2",
+         "@gender": "F",
+         "name": "Zara Lone",
+         "city": "Delhi",
+         "bill": "Rs 2200/-"
+      }
+   ]
+}
